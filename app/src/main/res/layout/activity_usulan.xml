@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/lapor_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/lapor_appbar"
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="4dp"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="2dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/form_laporan"
+                    android:layout_margin="4dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/tv_nama_usaha"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:hint="Nama Usaha"
+                        android:inputType="text"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconPadding="0dp"
+                        app:met_singleLineEllipsis="true" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/tv_alamat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:hint="Alamat"
+                        android:inputType="text"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconPadding="0dp"
+                        app:met_singleLineEllipsis="true" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/tv_no_wa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:hint="Nomor WhatsApp"
+                        android:inputType="number"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconPadding="0dp"
+                        app:met_singleLineEllipsis="true" />
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:text="Kategori"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:id="@+id/layout_checkbox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <CheckBox
+                            android:id="@+id/tp_wo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wedding Organizer"/>
+
+                        <CheckBox
+                            android:id="@+id/tp_rp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Rias Pengantin"/>
+
+                        <CheckBox
+                            android:id="@+id/tp_ct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Catering"/>
+
+                        <CheckBox
+                            android:id="@+id/tp_gp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gedung Pernikahan"/>
+
+                        <CheckBox
+                            android:id="@+id/tp_dk"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dokumentasi"/>
+
+                        <CheckBox
+                            android:id="@+id/tp_hb"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hiburan"/>
+
+                        <CheckBox
+                            android:id="@+id/tp_dekor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dekorasi"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_marginTop="8dp"
+                        android:layout_width="match_parent"
+                        android:text="Deskripsi"
+                        android:textSize="14sp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.chinalwb.are.styles.toolbar.ARE_ToolbarDefault
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/areToolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center_vertical" />
+
+                    <com.chinalwb.are.AREditText
+                        android:id="@+id/arEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:gravity="top|left"
+                        android:hint="Deskripsi"
+                        android:textSize="50sp" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/tv_lokasi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:hint="Lokasi"
+                        android:inputType="text"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconPadding="0dp"
+                        app:met_singleLineEllipsis="true" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_marginTop="8dp"
+                            android:layout_width="wrap_content"
+                            android:textSize="14sp"
+                            android:text="Foto"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/clear_foto"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:text="X"
+                            android:textStyle="bold"
+                            android:textColor="@color/md_red_500"
+                            android:textSize="16sp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/tempat_foto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                    <ImageView
+                        android:id="@+id/iv_foto"
+                        android:layout_marginTop="4dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:src="@drawable/ic_photo"/>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/tv_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:hint="Username"
+                        android:inputType="text"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconPadding="0dp"
+                        app:met_singleLineEllipsis="true" />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:id="@+id/tv_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        app:met_clearButton="true"
+                        app:met_floatingLabel="highlight"
+                        app:met_iconPadding="0dp"
+                        app:met_singleLineEllipsis="true" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.dd.processbutton.FlatButton
+        android:layout_marginBottom="4dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DAFTAR"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:pb_colorNormal="@color/colorPrimary"
+        app:pb_colorPressed="@color/colorAccent"
+        app:pb_cornerRadius="4dp" />
+
+</RelativeLayout>

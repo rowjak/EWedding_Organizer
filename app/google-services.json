@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "1045572719942",
+    "firebase_url": "https://absenos.firebaseio.com",
+    "project_id": "absenos",
+    "storage_bucket": "absenos.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045572719942:android:533b5390c88feb466ac147",
+        "android_client_info": {
+          "package_name": "com.ewo.skripsi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045572719942-jgmvgu6r9cd0fhos41hl4jlghodh3s7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOwD1ZACp0ur1YAzKTumFIUyegZf2YcAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045572719942-jgmvgu6r9cd0fhos41hl4jlghodh3s7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1045572719942:android:8db973569804b7d86ac147",
+        "android_client_info": {
+          "package_name": "com.ragshion.absenos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1045572719942-jgmvgu6r9cd0fhos41hl4jlghodh3s7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOwD1ZACp0ur1YAzKTumFIUyegZf2YcAc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1045572719942-jgmvgu6r9cd0fhos41hl4jlghodh3s7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
